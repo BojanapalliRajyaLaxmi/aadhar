@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aadhaar</title>
+    <!-- Make aadhar card drop down using hover, active , focus-within. -->
+</head>
+<style>
+    button{
+        background-color:#d3d3d3;
+        display: inline-block;
+        padding: 10px;
+        cursor: pointer;
+        border: none;
+    }
+    .content{
+        margin-top: 20px;
+        display: none;
+        width: 300px;
+    }
+    a:hover{
+        background-color: lightblue;
+        color: blue;
+    }
+    a{
+        padding: 10px;
+        display: block;
+        text-decoration: none;
+        color: #000000;
+    }
+    button:hover{
+        background-color: aqua;
+    }
+    button:hover + .content{
+        font-weight: 500px;
+        display: block;
+    }
+    button:active{
+        background-color: red;
+    }
+    
+    button:focus-within + .content{
+        display: block;
+    }
+</style>
+<body>
+    <button>My Aadhaar</button>
+    <div class="content">
+        <a href="#"><b>Update Your Aadhaar</b></a>
+        <a href="#">Document Aadhaar Update Status</a>
+        <a href="#">Check Demographic Data & Check Status</a>
+        <a href="#">List of supporting Documents for Aadhar Enrolment & Update</a>
+        <a href="#">Enrolment & Update Forms</a>
+        <a href="#">Aadhar Enrolment & Update Charges</a>
+        <a href="#">Aadhaar Update History</a>
+        <a href="#">Update Aadhar at Wnrolment Update Center</a>
+    </div>
+</body>
+</html>
